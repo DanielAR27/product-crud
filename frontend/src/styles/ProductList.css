@@ -1,0 +1,5 @@
+/* Lista de productos */
+.product-list {
+  display: grid;
+  gap: 1.25rem;
+}
