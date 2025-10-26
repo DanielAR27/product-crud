@@ -26,7 +26,7 @@ Aplicación web para gestionar productos con operaciones CRUD (Crear, Leer, Actu
 
 ### 1. Clonar el repositorio
 ```bash
-git clone <tu-repositorio>
+git clone git@github.com:DanielAR27/product-crud.git
 cd product-crud
 ```
 
