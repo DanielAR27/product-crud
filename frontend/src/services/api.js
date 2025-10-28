@@ -1,5 +1,7 @@
-// URL base de la API - construida con el puerto desde variable de entorno
-const API_URL = `http://localhost:${import.meta.env.VITE_API_PORT}/api`;
+import { getApiUrl } from '../config/api.config';
+
+const API_URL = getApiUrl();
+
 // Obtener todos los productos
 export const getProducts = async () => {
   const response = await fetch(`${API_URL}/products`);
