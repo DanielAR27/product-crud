@@ -8,7 +8,7 @@ const ProductItem = ({ product, onEdit, onDelete }) => {
         <h3>{product.name}</h3>
         <p className="description">{product.description || 'Sin descripción'}</p>
         <div className="product-details">
-          <span className="price">${parseFloat(product.price).toFixed(2)}</span>
+          <span className="price">${Number.parseFloat(product.price).toFixed(2)}</span>
           <span className="stock">Stock: {product.stock}</span>
         </div>
       </div>

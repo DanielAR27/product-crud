@@ -6,6 +6,7 @@ const getProducts = async (req, res) => {
     const products = await productModel.getAllProducts();
     res.json(products);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Error al obtener productos' });
   }
 };
@@ -22,6 +23,7 @@ const getProduct = async (req, res) => {
     
     res.json(product);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Error al obtener el producto' });
   }
 };
@@ -39,6 +41,7 @@ const createProduct = async (req, res) => {
     const newProduct = await productModel.createProduct(name, description, price, stock);
     res.status(201).json(newProduct);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Error al crear el producto' });
   }
 };
@@ -62,6 +65,7 @@ const updateProduct = async (req, res) => {
     
     res.json(updatedProduct);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Error al actualizar el producto' });
   }
 };
@@ -78,6 +82,7 @@ const deleteProduct = async (req, res) => {
     
     res.json({ message: 'Producto eliminado correctamente', product: deletedProduct });
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Error al eliminar el producto' });
   }
 };

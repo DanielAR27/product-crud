@@ -23,3 +23,7 @@ Thumbs.db
 # Coverage
 */coverage/
 coverage/
+
+# Sonnar
+.scannerwork
+sonar-project.properties
