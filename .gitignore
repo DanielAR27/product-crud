@@ -19,3 +19,7 @@ Thumbs.db
 
 # Docker
 *.pid
+
+# Coverage
+*/coverage/
+coverage/
