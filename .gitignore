@@ -1,29 +1,89 @@
-# Dependencies
+# ======================
+# Dependencias / Builds
+# ======================
 node_modules/
 */node_modules/
+dist/
+build/
+.out/
+.next/
+.turbo/
+.tmp/
+.cache/
+*.tgz
 
-# Environment variables
+# ======================
+# Variables de entorno
+# (todas las variantes)
+# ======================
 .env
+.env.*
+*.env
+*.env.*
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
 
-# Logs
+# ======================
+# Logs / PIDs
+# ======================
 *.log
 npm-debug.log*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDEs
-.vscode/
-.idea/
-
-# Docker
+yarn-error.log*
+pnpm-debug.log*
 *.pid
 
-# Coverage
-*/coverage/
-coverage/
+# ======================
+# OS
+# ======================
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Sonnar
+# ======================
+# IDEs / tooling
+# ======================
+.vscode/
+.idea/
+.history/
+*.swp
+
+# ======================
+# Cobertura / Reportes pesados
+# ======================
+coverage/
+*/coverage/
+lcov-report/
+reports/
+**/cypress/videos/
+**/cypress/screenshots/
+
+# (Si NO quieres reportes HTML en el repo, descomenta:)
+# **/cypress/reports/
+
+# ======================
+# Subidas locales / Datos
+# (ajusta si usas otra carpeta)
+# ======================
+uploads/
+storage/
+tmp/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+*.backup
+
+# ======================
+# Docker
+# ======================
+# Archivos temporales de runtime
+*.pid
+
+# ======================
+# Sonar
+# ======================
 .scannerwork
 sonar-project.properties
